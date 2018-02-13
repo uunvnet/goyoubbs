@@ -115,10 +115,10 @@ func (h *BaseHandler) UserLoginPost(w http.ResponseWriter, r *http.Request) {
 	} else {
 		// register
 		siteCf := h.App.Cf.Site
-		if siteCf.QQClientID > 0 || siteCf.WeiboClientID > 0 {
-			w.Write([]byte(`{"retcode":400,"retmsg":"请用QQ 或 微博一键登录"}`))
-			return
-		}
+		//if siteCf.QQClientID > 0 || siteCf.WeiboClientID > 0 {
+		//	w.Write([]byte(`{"retcode":400,"retmsg":"请用QQ 或 微博一键登录"}`))
+		//	return
+		//}
 		if siteCf.CloseReg {
 			w.Write([]byte(`{"retcode":400,"retmsg":"stop to new register"}`))
 			return
