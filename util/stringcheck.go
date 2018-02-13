@@ -7,7 +7,7 @@ import (
 var (
 	nicknameRegexp    = regexp.MustCompile(`^[a-z0-9A-Z\p{Han}]+(_[a-z0-9A-Z\p{Han}]+)*$`)
 	usernameRegexp    = regexp.MustCompile(`^[a-z0-9A-Z\p{Han}]+(_[a-z0-9A-Z\p{Han}]+)*$`)
-	regUserNameRegexp = regexp.MustCompile(`[^a-z0-9A-Z\p{Han}]+`)
+	regUserNameRegexp = regexp.MustCompile(`^[a-z0-9A-Z\p{Han}]+(_[a-z0-9A-Z\p{Han}]+)*$`)
 	mailRegexp        = regexp.MustCompile(`^[a-z0-9A-Z\p{Han}]+(_[a-z0-9A-Z\p{Han}]+)*$`)
 )
 
